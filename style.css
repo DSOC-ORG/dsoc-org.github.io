@@ -1,0 +1,108 @@
+::-webkit-scrollbar {
+    width: 3px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+
+
+html, body {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  color: green;
+  margin: 0;
+  padding: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.occupy-viewport-height {
+  height: 100vh;
+}
+
+.center-text {
+  text-align:center;
+}
+
+.answer {
+  text-indent: 20px;
+}
+
+.answer > p {
+  margin: 0;
+}
+
+.questions-and-answers {
+  max-width: 70%;
+  font-size: 1.2em;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 10px;
+  text-align: center;
+  max-width: 25%;
+}
+
+a {
+  color: lightblue;
+}
+
+.navigation > a {
+  line-height: 1.5em;
+  font-size: 1.3em;
+}
+
+.back-to-top-table {
+  display: none;
+}
+
+@media only screen and (max-width: 769px) {
+  .navigation {
+    position: relative;
+    right: unset;
+    top: unset;
+    max-width:unset;
+    text-align: left;
+  }
+  .questions-and-answers {
+    max-width: unset;
+  }
+  .back-to-top-table {
+    width: 40px;
+    height: 40px;;
+    oveflow: hidden;
+    display: table;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(50,50,50, .7);
+    color: white;
+  }
+  .back-to-top-table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+  }
+}
+
+.navigation > a:after {
+  display:block;
+  content: ''
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo-image {
+  width: 300px;
+  max-width: 100%;
+}
